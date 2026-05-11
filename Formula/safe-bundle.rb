@@ -1,23 +1,23 @@
 class SafeBundle < Formula
   desc "Local-first redaction and safe support bundle CLI"
   homepage "https://github.com/wildmason/safe-bundle"
-  version "1.0.0"
+  version "1.1.0"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/wildmason/safe-bundle/releases/download/v1.0.0/safe-bundle-v1.0.0-aarch64-apple-darwin.tar.gz"
-      sha256 "1fddec504ddd52e1e8f75c2f282d6f4c9940afcf25c2dbb6f06201de1e388ad8"
+      url "https://github.com/wildmason/safe-bundle/releases/download/v1.1.0/safe-bundle-v1.1.0-aarch64-apple-darwin.tar.gz"
+      sha256 "0b4dfd5b39f90aaabd661539eb98cb63475ca7f7e83c201bb47fdbefab7d9e62"
     else
-      url "https://github.com/wildmason/safe-bundle/releases/download/v1.0.0/safe-bundle-v1.0.0-x86_64-apple-darwin.tar.gz"
-      sha256 "a61e4de8fc2a700606ac6474aa0717cc1161389187e3466175208a80da09821e"
+      url "https://github.com/wildmason/safe-bundle/releases/download/v1.1.0/safe-bundle-v1.1.0-x86_64-apple-darwin.tar.gz"
+      sha256 "ccc9be8976d08c65f243d149354f8f8d9e0b6cefd027d2ba2268a1850d7025e0"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/wildmason/safe-bundle/releases/download/v1.0.0/safe-bundle-v1.0.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "e60a2f4c548841384aa50c2b6e82e31e9f3a7f7cdbe4011ea044ada48f1fd92d"
+      url "https://github.com/wildmason/safe-bundle/releases/download/v1.1.0/safe-bundle-v1.1.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "a202279ff7ab777556126fc0bd31a7e480008bf1145f8c71a97756c4206b763b"
     end
   end
 
